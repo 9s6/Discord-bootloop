@@ -1,2 +1,2 @@
 # Discord-bootloop
-Once discord is loaded it closes and loads itself the whole time
+This just adds code to a file discord loads on startup and the added code just runs a py script wich closes and opens discord again
